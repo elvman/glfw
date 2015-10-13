@@ -584,6 +584,12 @@ void _glfwPlatformRestoreWindow(_GLFWwindow* window)
     mir_surface_set_state(window->mir.surface, mir_surface_state_restored);
 }
 
+void _glfwPlatformMaximizeWindow(_GLFWwindow* window)
+{
+    _glfwInputError(GLFW_PLATFORM_ERROR,
+                    "Mir: Unsupported function %s", __PRETTY_FUNCTION__);
+}
+
 void _glfwPlatformHideWindow(_GLFWwindow* window)
 {
     MirSurfaceSpec* spec;

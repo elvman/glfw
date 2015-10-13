@@ -789,6 +789,9 @@ same name.
 `GLFW_ICONIFIED` indicates whether the specified window is iconified, whether by
 the user or with @ref glfwIconifyWindow.
 
+`GLFW_MAXIMIZED` indicates whether the specified window is maximized, whether by
+the user or with @ref glfwMaximizeWindow.
+
 `GLFW_VISIBLE` indicates whether the specified window is visible.  Window
 visibility can be controlled with @ref glfwShowWindow and @ref glfwHideWindow
 and initial visibility is controlled by the [window hint](@ref window_hints_wnd)

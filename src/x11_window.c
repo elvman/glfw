@@ -1800,6 +1800,11 @@ void _glfwPlatformRestoreWindow(_GLFWwindow* window)
     XFlush(_glfw.x11.display);
 }
 
+void _glfwPlatformMaximizeWindow(_GLFWwindow* window)
+{
+    // TODO: The code
+}
+
 void _glfwPlatformShowWindow(_GLFWwindow* window)
 {
     XMapRaised(_glfw.x11.display, window->x11.handle);

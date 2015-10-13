@@ -1031,6 +1031,11 @@ void _glfwPlatformRestoreWindow(_GLFWwindow* window)
     [window->ns.object deminiaturize:nil];
 }
 
+void _glfwPlatformMaximizeWindow(_GLFWwindow* window)
+{
+    // TODO: The code
+}
+
 void _glfwPlatformShowWindow(_GLFWwindow* window)
 {
     // Make us the active application

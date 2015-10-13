@@ -1016,6 +1016,11 @@ void _glfwPlatformRestoreWindow(_GLFWwindow* window)
     ShowWindow(window->win32.handle, SW_RESTORE);
 }
 
+void _glfwPlatformMaximizeWindow(_GLFWwindow* window)
+{
+    // TODO: The code
+}
+
 void _glfwPlatformShowWindow(_GLFWwindow* window)
 {
     ShowWindow(window->win32.handle, SW_SHOW);
