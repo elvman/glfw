@@ -637,6 +637,13 @@ int _glfwPlatformWindowVisible(_GLFWwindow* window)
     return mir_surface_get_visibility(window->mir.surface) == mir_surface_visibility_exposed;
 }
 
+int _glfwPlatformWindowMaximized(_GLFWwindow* window)
+{
+    _glfwInputError(GLFW_PLATFORM_ERROR,
+                    "Mir: Unsupported function %s", __PRETTY_FUNCTION__);
+    return GLFW_FALSE;
+}
+
 void _glfwPlatformPollEvents(void)
 {
     EventNode* node = NULL;

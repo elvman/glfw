@@ -1844,6 +1844,11 @@ int _glfwPlatformWindowVisible(_GLFWwindow* window)
     return wa.map_state == IsViewable;
 }
 
+int _glfwPlatformWindowMaximized(_GLFWwindow* window)
+{
+    return GLFW_FALSE;
+}
+
 void _glfwPlatformPollEvents(void)
 {
     int count = XPending(_glfw.x11.display);

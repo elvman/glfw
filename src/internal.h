@@ -622,6 +622,11 @@ int _glfwPlatformWindowIconified(_GLFWwindow* window);
  */
 int _glfwPlatformWindowVisible(_GLFWwindow* window);
 
+/*! @brief Returns whether the window is maximized.
+ *  @ingroup platform
+ */
+int _glfwPlatformWindowMaximized(_GLFWwindow* window);
+
 /*! @copydoc glfwPollEvents
  *  @ingroup platform
  */

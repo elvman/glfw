@@ -407,6 +407,12 @@ int _glfwPlatformWindowVisible(_GLFWwindow* window)
     return GLFW_FALSE;
 }
 
+int _glfwPlatformWindowMaximized(_GLFWwindow* window)
+{
+    // TODO
+    return GLFW_FALSE;
+}
+
 void _glfwPlatformPollEvents(void)
 {
     handleEvents(0);

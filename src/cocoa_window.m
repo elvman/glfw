@@ -1033,7 +1033,7 @@ void _glfwPlatformRestoreWindow(_GLFWwindow* window)
 
 void _glfwPlatformMaximizeWindow(_GLFWwindow* window)
 {
-    // TODO: The code
+    [window->ns.object toggleFullScreen:nil];
 }
 
 void _glfwPlatformShowWindow(_GLFWwindow* window)
@@ -1070,6 +1070,11 @@ int _glfwPlatformWindowIconified(_GLFWwindow* window)
 int _glfwPlatformWindowVisible(_GLFWwindow* window)
 {
     return [window->ns.object isVisible];
+}
+
+int _glfwPlatformWindowMaximized(_GLFWwindow* window)
+{
+    return ([window->ns.object styleMask] & NSFullScreenWindowMask) != 0;
 }
 
 void _glfwPlatformPollEvents(void)
